@@ -67,12 +67,13 @@ public class Adventurecraft {
                     ItemList.ingot_neodymium = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("ingot_neodymium")),
                     ItemList.ingot_silver = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("ingot_silver")),
                     ItemList.ingot_tin = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("ingot_tin")),
-                    ItemList.shard_copper_stone = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_copper_stone")),
-                    ItemList.shard_manganese_netherrack = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_manganese_netherrack")),
-                    ItemList.shard_manganese_stone = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_manganese_stone")),
-                    ItemList.shard_neodymium_endstone = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_neodymium_endstone")),
-                    ItemList.shard_silver_stone = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_silver_stone")),
-                    ItemList.shard_tin_stone = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("shard_tin_stone")),
+                    ItemList.oreshard_overworld_copper = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_overworld_copper")),
+                    ItemList.oreshard_overworld_iron = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_overworld_iron")),
+                    ItemList.oreshard_nether_manganese = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_nether_manganese")),
+                    ItemList.oreshard_overworld_manganese = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_overworld_manganese")),
+                    ItemList.oreshard_end_neodymium = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_end_neodymium")),
+                    ItemList.oreshard_overworld_silver = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_overworld_silver")),
+                    ItemList.oreshard_overworld_tin = new Item(new Item.Properties().group(ADVENTURECRAFT_ITEMS)).setRegistryName(location("oreshard_overworld_tin")),
 
                     // Tools
                     ItemList.hatchet_flint = new AxeItem(ToolMaterialList.flint, 2.0f, -2.2f,
@@ -105,8 +106,12 @@ public class Adventurecraft {
             logger.info("Registering blocks...");
 
             event.getRegistry().registerAll(
+                    // Metals
                     BlockList.block_copper = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3f,6f).sound(SoundType.METAL))
                             .setRegistryName(location("block_copper")),
+
+
+                    // Ores
                     BlockList.ore_end_neodymium = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f, 9f).sound(SoundType.STONE))
                             .setRegistryName(location("ore_end_neodymium")),
                     BlockList.ore_nether_manganese = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2f,6f).sound(SoundType.STONE))

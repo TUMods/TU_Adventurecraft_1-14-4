@@ -14,7 +14,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tuadventurecraft:shard_neodymium_endstone"
+          "name": "tuadventurecraft:oreshard_end_neodymium"
         }
       ],
       "conditions": [
