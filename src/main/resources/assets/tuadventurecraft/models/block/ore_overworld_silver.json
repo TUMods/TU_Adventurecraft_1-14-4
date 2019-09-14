@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "tuadventurecraft:block/ore_overworld_silver"
+    }
+}

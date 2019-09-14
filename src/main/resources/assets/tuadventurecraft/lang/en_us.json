@@ -1,10 +1,31 @@
 {
   "item.tuadventurecraft.ingot_copper": "Copper Ingot",
+  "item.tuadventurecraft.ingot_neodymium": "Neodymium Ingot",
+  "item.tuadventurecraft.ingot_silver": "Silver Ingot",
+  "item.tuadventurecraft.ingot_tin": "Tin Ingot",
+  "item.tuadventurecraft.shard_neodymium_endstone": "Neodymium Shard",
+  "item.tuadventurecraft.shard_manganese_netherrack": "Manganese Nether Shard",
+  "item.tuadventurecraft.shard_manganese_stone": "Manganese Shard",
+  "item.tuadventurecraft.shard_copper_stone": "Copper Shard",
+  "item.tuadventurecraft.shard_silver_stone": "Silver Shard",
+  "item.tuadventurecraft.shard_tin_stone": "Tin Shard",
+
+  "item.tuadventurecraft.hatchet_flint": "Flint Hatchet",
+  "item.tuadventurecraft.hoshick_flint": "Flint Hoshick",
+  "item.tuadventurecraft.knife_flint": "Flint Knife",
 
 
   "block.tuadventurecraft.block_copper": "Copper Block",
 
+  "block.tuadventurecraft.ore_end_neodymium": "Neodymium Ore",
+  "block.tuadventurecraft.ore_nether_manganese": "Nether Manganese Ore",
+  "block.tuadventurecraft.ore_overworld_copper": "Copper Ore",
+  "block.tuadventurecraft.ore_overworld_manganese": "Manganese Ore",
+  "block.tuadventurecraft.ore_overworld_silver": "Silver Ore",
+  "block.tuadventurecraft.ore_overworld_tin": "Tin Ore",
 
+
+  "_comment": "ItemGroup Tabs",
   "itemGroup.adventurecraft_items": "Adventurecraft Items",
   "itemGroup.adventurecraft_blocks": "Adventurecraft Blocks"
 }
