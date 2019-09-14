@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tuadventurecraft:shard_manganese_netherrack",
-    "tuadventurecraft:shard_manganese_stone"
+    "tuadventurecraft:oreshard_nether_manganese",
+    "tuadventurecraft:oreshard_overworld_manganese"
   ]
 }

@@ -14,7 +14,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tuadventurecraft:shard_copper_stone"
+          "name": "tuadventurecraft:oreshard_overworld_iron"
         }
       ],
       "conditions": [

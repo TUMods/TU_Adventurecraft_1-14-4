@@ -13,7 +13,7 @@ public class OreGeneration {
     public static void setupOreGeneration() {
         // Select the biomes that the ores will generate in
         for (Biome biome : ForgeRegistries.BIOMES) {
-            CountRangeConfig copper_ore_placement = new CountRangeConfig(1000, 20, 20, 75);
+            CountRangeConfig copper_ore_placement = new CountRangeConfig(15, 20, 75, 20);
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
                     new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.ore_overworld_copper.getDefaultState(), 8),
                     Placement.COUNT_RANGE, copper_ore_placement));

@@ -9,12 +9,13 @@ public class ItemList {
     public static Item ingot_neodymium;
     public static Item ingot_silver;
     public static Item ingot_tin;
-    public static Item shard_copper_stone;
-    public static Item shard_manganese_netherrack;
-    public static Item shard_manganese_stone;
-    public static Item shard_neodymium_endstone;
-    public static Item shard_silver_stone;
-    public static Item shard_tin_stone;
+    public static Item oreshard_overworld_copper;
+    public static Item oreshard_overworld_iron;
+    public static Item oreshard_nether_manganese;
+    public static Item oreshard_overworld_manganese;
+    public static Item oreshard_end_neodymium;
+    public static Item oreshard_overworld_silver;
+    public static Item oreshard_overworld_tin;
 
     // Tools
     public static Item hatchet_flint;
