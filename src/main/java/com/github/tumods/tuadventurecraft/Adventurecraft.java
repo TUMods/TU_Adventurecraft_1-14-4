@@ -1,5 +1,6 @@
 package com.github.tumods.tuadventurecraft;
 
+import com.github.tumods.tuadventurecraft.config.Config;
 import com.github.tumods.tuadventurecraft.itemgroup.AdventurecraftBlocks;
 import com.github.tumods.tuadventurecraft.itemgroup.AdventurecraftItems;
 import com.github.tumods.tuadventurecraft.itemtypes.HoshickItem;
@@ -19,10 +20,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,13 +34,19 @@ import org.apache.logging.log4j.Logger;
 public class Adventurecraft {
     private static Adventurecraft instance;
     public static final String modid = "tuadventurecraft";
-    private static final Logger logger = LogManager.getLogger(modid);
+    public static final Logger logger = LogManager.getLogger(modid);
 
     public static final ItemGroup ADVENTURECRAFT_ITEMS = new AdventurecraftItems();
     public static final ItemGroup ADVENTURECRAFT_BLOCKS = new AdventurecraftBlocks();
 
     public Adventurecraft() {
         instance = this;
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config);
+
+        Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("adventurecraft-server.toml").toString());
+        Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("adventurecraft-client.toml").toString());
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
