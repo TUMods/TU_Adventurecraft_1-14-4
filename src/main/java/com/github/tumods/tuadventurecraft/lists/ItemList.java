@@ -30,4 +30,5 @@ public class ItemList {
     public static Item ore_overworld_tin;
     public static Item ore_end_neodymium;
     public static Item ore_nether_manganese;
+    public static Item chair_spruce;
 }

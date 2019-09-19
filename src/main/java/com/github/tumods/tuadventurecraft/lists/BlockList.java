@@ -1,5 +1,6 @@
 package com.github.tumods.tuadventurecraft.lists;
 
+import com.github.tumods.tuadventurecraft.blocktypes.ChairBlock;
 import net.minecraft.block.Block;
 
 public class BlockList {
@@ -13,4 +14,7 @@ public class BlockList {
     public static Block ore_overworld_tin;
     public static Block ore_end_neodymium;
     public static Block ore_nether_manganese;
+
+    // Decoration blocks
+    public static Block chair_spruce;
 }
