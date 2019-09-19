@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "facing=north": { "model": "tuadventurecraft:block/chair_both_arms_spruce" },
+    "facing=south": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 180 },
+    "facing=east": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 90},
+    "facing=west": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 270}
+  }
+}

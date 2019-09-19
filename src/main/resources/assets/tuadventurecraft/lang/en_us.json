@@ -25,6 +25,8 @@
   "block.tuadventurecraft.ore_overworld_silver": "Silver Ore",
   "block.tuadventurecraft.ore_overworld_tin": "Tin Ore",
 
+  "block.tuadventurecraft.chair_spruce": "Spruce Chair",
+
 
   "_comment": "ItemGroup Tabs",
   "itemGroup.adventurecraft_items": "Adventurecraft Items",

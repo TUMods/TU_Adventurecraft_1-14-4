@@ -1,17 +1,20 @@
 package com.github.tumods.tuadventurecraft;
 
+import com.github.tumods.tuadventurecraft.blocktypes.ChairBlock;
 import com.github.tumods.tuadventurecraft.config.Config;
 import com.github.tumods.tuadventurecraft.itemgroup.AdventurecraftBlocks;
 import com.github.tumods.tuadventurecraft.itemgroup.AdventurecraftItems;
 import com.github.tumods.tuadventurecraft.itemtypes.HoshickItem;
 import com.github.tumods.tuadventurecraft.itemtypes.KnifeItem;
 import com.github.tumods.tuadventurecraft.lists.BlockList;
+import com.github.tumods.tuadventurecraft.lists.EntityList;
 import com.github.tumods.tuadventurecraft.lists.ItemList;
 import com.github.tumods.tuadventurecraft.lists.ToolMaterialList;
 import com.github.tumods.tuadventurecraft.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -107,7 +110,9 @@ public class Adventurecraft {
                     ItemList.ore_overworld_silver = new BlockItem(BlockList.ore_overworld_silver, new Item.Properties().group(ADVENTURECRAFT_BLOCKS))
                             .setRegistryName(BlockList.ore_overworld_silver.getRegistryName()),
                     ItemList.ore_overworld_tin = new BlockItem(BlockList.ore_overworld_tin, new Item.Properties().group(ADVENTURECRAFT_BLOCKS))
-                            .setRegistryName(BlockList.ore_overworld_tin.getRegistryName())
+                            .setRegistryName(BlockList.ore_overworld_tin.getRegistryName()),
+                    ItemList.chair_spruce = new BlockItem(BlockList.chair_spruce, new Item.Properties().group(ADVENTURECRAFT_BLOCKS))
+                            .setRegistryName(BlockList.chair_spruce.getRegistryName())
             );
         }
 
@@ -133,7 +138,21 @@ public class Adventurecraft {
                     BlockList.ore_overworld_silver = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f,6f).sound(SoundType.STONE))
                             .setRegistryName(location("ore_overworld_silver")),
                     BlockList.ore_overworld_tin = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.f, 4.f).sound(SoundType.STONE))
-                            .setRegistryName(location("ore_overworld_tin"))
+                            .setRegistryName(location("ore_overworld_tin")),
+
+
+                    // Decoration Blocks
+                    BlockList.chair_spruce = new ChairBlock(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD)).setRegistryName(location("chair_spruce"))
+            );
+        }
+
+        @SubscribeEvent
+        public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event) {
+            logger.info("Registering blocks...");
+
+            event.getRegistry().registerAll(
+                    // Chair Entity
+                    EntityList.CHAIR
             );
         }
 

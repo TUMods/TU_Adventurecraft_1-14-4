@@ -37,10 +37,10 @@ public class OreGeneration {
                     Placement.COUNT_RANGE, manganese_ore_nether_placement));
 
             // End Neodymium //TODO: Implement FillerBlockType for ENDSTONE
-            CountRangeConfig neodymium_ore_end_placement = new CountRangeConfig(OregenConfig.neodymium_ore_end_chance.get(), 12, 0, 35);
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.ore_end_neodymium.getDefaultState(), OregenConfig.neodymium_ore_end_size.get()),
-                    Placement.COUNT_RANGE, neodymium_ore_end_placement));
+//            CountRangeConfig neodymium_ore_end_placement = new CountRangeConfig(OregenConfig.neodymium_ore_end_chance.get(), 12, 0, 35);
+//            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
+//                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.valueOf("endstone"), BlockList.ore_end_neodymium.getDefaultState(), OregenConfig.neodymium_ore_end_size.get()),
+//                    Placement.COUNT_RANGE, neodymium_ore_end_placement));
 
             // Overworld Silver
             CountRangeConfig silver_ore_overworld_placement = new CountRangeConfig(OregenConfig.silver_ore_overworld_chance.get(), 12, 0, 35);
