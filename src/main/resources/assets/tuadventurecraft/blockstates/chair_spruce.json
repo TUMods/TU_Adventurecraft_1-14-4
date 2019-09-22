@@ -1,9 +1,21 @@
 {
   "variants":
   {
-    "facing=north": { "model": "tuadventurecraft:block/chair_both_arms_spruce" },
-    "facing=south": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 180 },
-    "facing=east": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 90},
-    "facing=west": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 270}
+    "facing=north,arms=both,shape=straight": { "model": "tuadventurecraft:block/chair_both_arms_spruce" },
+    "facing=south,arms=both,shape=straight": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 180 },
+    "facing=east,arms=both,shape=straight": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 90},
+    "facing=west,arms=both,shape=straight": { "model": "tuadventurecraft:block/chair_both_arms_spruce", "y": 270},
+    "facing=north,arms=left,shape=straight": { "model": "tuadventurecraft:block/chair_left_arm_spruce" },
+    "facing=south,arms=left,shape=straight": { "model": "tuadventurecraft:block/chair_left_arm_spruce", "y": 180 },
+    "facing=east,arms=left,shape=straight": { "model": "tuadventurecraft:block/chair_left_arm_spruce", "y": 90},
+    "facing=west,arms=left,shape=straight": { "model": "tuadventurecraft:block/chair_left_arm_spruce", "y": 270},
+    "facing=north,arms=right,shape=straight": { "model": "tuadventurecraft:block/chair_right_arm_spruce" },
+    "facing=south,arms=right,shape=straight": { "model": "tuadventurecraft:block/chair_right_arm_spruce", "y": 180 },
+    "facing=east,arms=right,shape=straight": { "model": "tuadventurecraft:block/chair_right_arm_spruce", "y": 90},
+    "facing=west,arms=right,shape=straight": { "model": "tuadventurecraft:block/chair_right_arm_spruce", "y": 270},
+    "facing=north,arms=none,shape=straight": { "model": "tuadventurecraft:block/chair_no_arms_spruce" },
+    "facing=south,arms=none,shape=straight": { "model": "tuadventurecraft:block/chair_no_arms_spruce", "y": 180 },
+    "facing=east,arms=none,shape=straight": { "model": "tuadventurecraft:block/chair_no_arms_spruce", "y": 90},
+    "facing=west,arms=none,shape=straight": { "model": "tuadventurecraft:block/chair_no_arms_spruce", "y": 270}
   }
 }
